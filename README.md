@@ -3,6 +3,14 @@
 Skapa en robust, säker och skalbar hosting-miljö för en webapplikation (med en sida som innehåller ditt namn)
 
 Denna uppgift är löst med hjälp av Cloudformations och ett bash-script. Genom att använda CloudFormation kan hela infrastrukturen skapas automatiskt och konsekvent, vilket minskar risken för mänskliga fel och säkerställer att samma konfiguration används i varje distribution.
+
+Kör scriptet med kommando: 
+```
+aws cloudformation deploy --template-file demostack.yaml --stack-name Demostack1
+```
+infrastruktur:
+![image](https://github.com/user-attachments/assets/03a9c88b-9b13-4bcc-91e9-61332ed38c6b)
+
 ___
 # Överblick på infrastruktur:
 
@@ -35,7 +43,8 @@ Auto Scaling Group (ASG): Hanterar automatisk horisontell skalning av instanser,
 **Outputs:**
 Ger användbara utdata som VPC ID och DNS-namnet för lastbalanseraren.
 
-# Sammanfattningsvis ger detta skript både säkerhet genom isolering av resurser och skalbarhet genom automatiserad hantering av resurser, samtidigt som det säkerställer hög tillgänglighet genom användning av flera tillgänglighet zoner och en lastbalanserare.
+# Sammanfattning 
+Detta skript ger både säkerhet genom isolering av resurser och skalbarhet genom automatiserad hantering av resurser, samtidigt som det säkerställer hög tillgänglighet genom användning av flera tillgänglighet zoner och en lastbalanserare.
 
 # Förslag på åtgärder för ökad säkerhet:
 Bastion Host för SSH behörighet
