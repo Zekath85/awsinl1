@@ -22,8 +22,8 @@ Hög tillgänglighet och skalbarhet:
 Subnets i flera availability zones: Skapar subnät i olika tillgänglighets zoner, vilket ökar redundansen och tillgängligheten.
 Auto Scaling Group: Gör det möjligt att automatiskt skala upp eller ner antalet instanser baserat på belastning, vilket optimerar resurser och kostnader.
 
-### Förklaring av delar:
-# AWSTemplateFormatVersion och Description:
+# Förklaring av delar:
+**AWSTemplateFormatVersion och Description:**
 Sätter versionsnumret på CloudFormation-mallen och lägger till en beskrivning av stacken.
 
 **Parameters:**
